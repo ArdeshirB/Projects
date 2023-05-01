@@ -1,6 +1,6 @@
 # Electricity Demand Forecasting (New South Wales - Australia)
 
-# Abstract
+## Abstract
 The aim of this project was to investigate whether temperature
 and seasonal features could be used to accurately predict energy demand, with
 and without using prior demand as a dependent variable. Several models were
