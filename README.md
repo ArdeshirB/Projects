@@ -7,7 +7,7 @@ and without using prior demand as a dependent variable. Several models were
 assessed in this project under multiple scenarios, including linear models, random
 forests, LightGBM and Long Short-Term Memory models. 
 
-![AEM](https://user-images.githubusercontent.com/127566032/235393785-026f4c75-da4e-4367-821b-620c17164be2.jpg)
+[6-infographic.PDF](https://github.com/ArdeshirB/Projects/files/11363227/6-infographic.PDF)
 
 
 The findings indicated that for long-term forecasting, within the range of weeks to months, an ensemble
