@@ -79,7 +79,9 @@ In summary, the Light Gradient Boost model showed the best performance in predic
 
 Long Short-Term Memory (LSTM) is a recurrent neural network structure that effectively captures long-term dependencies in time series data. LSTMs have demonstrated promise in applications such as bitcoin price forecasting and crude oil price prediction. The LSTM architecture features a memory cell with three gating mechanisms: forget, input, and output gate. These networks have shown superior performance in short-term predictions compared to traditional RNNs and other sequence learning methods, often surpassing traditional methods like ARIMA.
 
-![LSTM Cell](https://user-images.githubusercontent.com/127566032/235382607-b87862fb-a774-4d94-b548-a0c51a9a1cf5.JPG)
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/127566032/235382607-b87862fb-a774-4d94-b548-a0c51a9a1cf5.JPG" alt="LSTM Cell" />
+</div>
 
 LSTM combined with ADAM (Adaptive Moment Estimation) optimizer has proven well-suited for electricity spot buyers and electricity price forecasting. Assuming high accuracy preference and 5-minute granularity data availability, a sequence-to-vector unidirectional LSTM model was developed. This model used a scaled two-dimensional Numpy array as input from the previous fifty timestamps and predicted a single subsequent timestamp on a rolling basis.
 
