@@ -109,7 +109,11 @@ The preliminary LSTM model employed a slower learning rate, ADAM optimizer, L1 a
 
 The final LSTM model, after extensive grid search and hyperparameter optimization, achieved an R2 score of 0.93, with a significant improvement observed when the learning rate was adjusted to 0.0002 and the batch size set to 3000. The number of hidden nodes was decreased to 5, accelerating model execution and enhancing convergence. The best model was saved based on the lowest RMSE score.
 
-<img width="1000" alt="LSTM4" src="https://user-images.githubusercontent.com/127566032/235382514-671752ee-7da9-4c42-b13b-20b85b08c8bf.png">
+
+<div align="center">
+  <img alt="LSTM" src="https://user-images.githubusercontent.com/127566032/235394164-a0544f3b-32d8-4fa4-b836-ba794e9c9e85.JPG" />
+</div>
+
 
 This LSTM model's performance is comparable to the 82.5% prediction accuracy reported by Japanese researchers using LSTM networks for month-ahead electricity consumption forecasting. Overall, LSTMs hold significant potential for forecasting in various fields, demonstrating their capability for capturing long-term dependencies in time series data and outperforming traditional forecasting methods.
 
