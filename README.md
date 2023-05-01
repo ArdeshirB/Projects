@@ -1,6 +1,7 @@
 <p align="center">
-  <b>FORECAST ELECTRICITY CONSUMPTION IN AUSTRALIA</b>
+  <b style="font-size: 24px;">FORECAST ELECTRICITY CONSUMPTION IN AUSTRALIA</b>
 </p>
+
 
 ## Abstract
 The aim of this project was to investigate whether temperature
