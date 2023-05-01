@@ -58,7 +58,9 @@ Box plots of energy demand over days of the week and months of the year show exp
 
 When analyzing temperature and total demand by time periods (night, morning, afternoon, evening), the 180-day moving averages show that demand during the night period is significantly lower and less variable than the other time periods.
 
-<img width="900" alt="box-tot-dem-months" src="https://user-images.githubusercontent.com/127566032/235383068-d596e5f6-68a1-4301-b06a-1224b7f29c7c.png">
+<div align="center">
+  <img width="600" alt="box-tot-dem-months" src="https://user-images.githubusercontent.com/127566032/235383068-d596e5f6-68a1-4301-b06a-1224b7f29c7c.png" />
+</div>
 
 ## Analysis and Results
 This study investigates the relationship between temperature and total energy demand in New South Wales using various machine learning models. The dataset comprises of 1,323,266 rows of data for both total demand (ranging from 4,286 MW to 14,649 MW) and air temperature (ranging from -1.3°C to 44.7°C). The data analysis begins by creating 7-day and 180-day moving averages of temperature and total demand. Seasonal temperature variations are consistent, while total energy demand shows a long-term downward trend with higher peaks and deeper troughs. Demand increases during temperature extremes due to heating and air-conditioning use.
