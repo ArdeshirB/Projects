@@ -87,7 +87,9 @@ LSTM combined with ADAM (Adaptive Moment Estimation) optimizer has proven well-s
 
 The deep learning model training phase ceased at the end of the training set, but recent data was continually supplied for testing purposes. This approach allowed the model to utilize the most current data for predictions based on the preceding fifty steps, promoting continuous adaptation. Despite computational complexities, extra resources were procured for training and evaluating LSTM models by subscribing to Colab Pro+.
 
-![TimeSeries-Split (1)](https://user-images.githubusercontent.com/127566032/235382684-09139c49-3c68-41b3-998b-43574a1b2284.png)
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/127566032/235382684-09139c49-3c68-41b3-998b-43574a1b2284.png" alt="TimeSeries-Split (1)" />
+</div>
 
 The preliminary LSTM model employed a slower learning rate, ADAM optimizer, L1 and L2 regularization, and set the epoch count at 20. The batch size was reduced to 2000, and Mean Absolute Error (MAE) was used as the loss function. A dropout rate of 0.1 across two layers was applied, promoting model robustness against noise.
 
