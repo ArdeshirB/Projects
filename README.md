@@ -50,11 +50,15 @@ Seven-day and 180-day moving averages of temperature and total demand were creat
 
 Total demand increases when the temperature is towards low or high extremes, consistent with the use of heating and air-conditioning during colder and warmer months. Histograms of temperature and total demand illustrate this relationship, with different colors for each season and mean and 95% confidence intervals depicted.
 
-<img width="1000" alt="hist-avg-temp" src="https://user-images.githubusercontent.com/127566032/235382535-a719b397-dd1b-47e3-b2fc-14f965d2b95c.png">
+<div align="center">
+  <img width="600" alt="hist-avg-temp" src="https://user-images.githubusercontent.com/127566032/235382535-a719b397-dd1b-47e3-b2fc-14f965d2b95c.png" />
+</div>
 
 Box plots of energy demand over days of the week and months of the year show expected trends. Less energy is used on weekends, likely due to reduced commercial consumption. Higher consumption is observed in summer and winter, with reduced consumption in spring and autumn. Outliers are more likely to be associated with increased energy consumption.
 
-<img width="1000" alt="hist-avg-tot-dem" src="https://user-images.githubusercontent.com/127566032/235382541-8b7f8db1-2412-4663-8746-1f84b16620a9.png">
+<div align="center">
+  <img width="600" alt="hist-avg-tot-dem" src="https://user-images.githubusercontent.com/127566032/235382541-8b7f8db1-2412-4663-8746-1f84b16620a9.png" />
+</div>
 
 When analyzing temperature and total demand by time periods (night, morning, afternoon, evening), the 180-day moving averages show that demand during the night period is significantly lower and less variable than the other time periods.
 
