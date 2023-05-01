@@ -1,4 +1,4 @@
-# Electricity Demand Forecasting (New South Wales - Australia)
+## FORECAST ELECTRICITY CONSUMPTION IN AUSTRALIA
 
 ## Abstract
 The aim of this project was to investigate whether temperature
