@@ -1,5 +1,4 @@
-# Title
-Electricity Demand Forecasting (New South Wales - Australia)
+# Electricity Demand Forecasting (New South Wales - Australia)
 
 # Abstract
 The aim of this project was to investigate whether temperature
