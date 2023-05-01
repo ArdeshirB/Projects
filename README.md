@@ -46,9 +46,7 @@ This study focuses on the analysis of total demand (MW) and temperature (°C) va
 
 Seven-day and 180-day moving averages of temperature and total demand were created to analyze the data. The temperature chart demonstrates a consistent variation in temperature across recurring annual cycles over the 12-year period. The total demand chart reveals a long-term trend of reducing demand over the same period, although the variation has intensified recently, with higher peaks and deeper troughs.
 
-<div align="center">
-  <img width="720" height="576" alt="moving-avg-temp" src="https://user-images.githubusercontent.com/127566032/235382504-f38dbed2-8d2f-4ded-9d7a-5974fffafc5d.png" />
-</div>
+<img width="1000" alt="moving-avg-temp" src="https://user-images.githubusercontent.com/127566032/235382504-f38dbed2-8d2f-4ded-9d7a-5974fffafc5d.png">
 
 Total demand increases when the temperature is towards low or high extremes, consistent with the use of heating and air-conditioning during colder and warmer months. Histograms of temperature and total demand illustrate this relationship, with different colors for each season and mean and 95% confidence intervals depicted.
 
