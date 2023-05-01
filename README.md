@@ -11,7 +11,7 @@ forests, LightGBM and Long Short-Term Memory models.
 <div align="center">
   <img alt="AEMO 5 Min Set" src="https://user-images.githubusercontent.com/127566032/235395087-863b7ab4-a87d-4376-af82-c900ede0837b.jpg" width="600" />
 </div>
-[6-infographic.PDF](https://github.com/ArdeshirB/Projects/files/11363227/6-infographic.PDF)
+(https://www.aemc.gov.au/sites/default/files/content/04db4725-8144-444f-b3b9-0276e7bbaf87/6-infographic.PDF)
 
 
 The findings indicated that for long-term forecasting, within the range of weeks to months, an ensemble
