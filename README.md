@@ -7,6 +7,10 @@ and without using prior demand as a dependent variable. Several models were
 assessed in this project under multiple scenarios, including linear models, random
 forests, LightGBM and Long Short-Term Memory models. 
 
+
+<div align="center">
+  <img alt="AEMO 5 Min Set" src="https://user-images.githubusercontent.com/127566032/235395087-863b7ab4-a87d-4376-af82-c900ede0837b.jpg" width="600" />
+</div>
 [6-infographic.PDF](https://github.com/ArdeshirB/Projects/files/11363227/6-infographic.PDF)
 
 
