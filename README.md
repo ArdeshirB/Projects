@@ -16,10 +16,10 @@ Memory model, accompanied by a 5-fold time series cross-validation, along with
 dropout and regularisation, delivered optimal results (R2=0.93, RMSE=325.32,
 MAPE=3.16%).
 
-# Introduction
+## Introduction
 In the past decade, high electricity costs have negatively impacted Australians. The unstable national grid is affected by spot market fluctuations and inconsistent supply. Accurate forecasting tools can help generator firms prepare for demand spikes, easing grid pressure and reducing price surges. The project's aim was to find optimal energy demand forecasting models. Surprisingly, an ensemble of four Light Gradient Boost models provided accurate, time-efficient results for horizons up to 16 months. This enables federal and state governments to confidently forecast energy demand, aiding in planning for future energy requirements.
 
-# Literature Review
+## Literature Review
 Climate change, with weather extremes like heatwaves and droughts, significantly impacts energy supply, demand, and infrastructure. Temperature is a crucial factor in forecasting electricity demand, as shown by an 11% or more increase in India's electricity demand at temperatures of 30°C and above. Accurate forecasting of energy demand with temperature as a predictor is beneficial for managing energy supply.
 
 Solar power adds complexity to electricity demand forecasting due to intraday variations in supply and demand. More energy is generated during the day, while the grid is more heavily relied upon in the evening. Australia's national grid could face instability by 2024 due to system overload, and electricity prices vary depending on buying strategies, leading to high costs for spot buyers.
@@ -28,7 +28,7 @@ Several statistical techniques have been used to forecast energy demand, includi
 
 Models were developed using linear models, random forests, LightGBM, and LSTM, and assessed under various scenarios. Coefficient of Determination (R²), Root Mean Square Error (RMSE), and Mean Absolute Percentage Error (MAPE) were used to measure accuracy.
 
-# Material and Methods
+## Material and Methods
 Google Colab was chosen as the coding environment. Python was used as the programming language. Scikit-learn, Light Gradient Boosting Machine, Keras, and TensorFlow libraries were utilized to build various models. GitHub, an online platform for data and code sharing, was used to store source data and code for this project. 
 
 The datasets consisted of electricity demand and air temperature information. After preprocessing, the data was transformed into a usable format, and the two datasets were joined. Data cleaning was performed to address issues such as different time intervals and anomalous values.
@@ -39,7 +39,7 @@ The performance of these models was evaluated using three key metrics: Coefficie
 
 
 
-# Exploratory Data Analysis
+## Exploratory Data Analysis
 This study focuses on the analysis of total demand (MW) and temperature (°C) variables from merged and cleaned data sets, with a total of 1,323,266 rows. The total demand ranges from 4,286 MW to 14,649 MW, with a mean of 8,068 ± 1,308 MW. The temperature ranges from -1.3°C to 44.7°C, with a mean of 17.4 ± 5.85°C, which is reasonable for Bankstown, NSW.
 
 <img width="1000" alt="moving-avg-tot-dem" src="https://user-images.githubusercontent.com/127566032/235382499-c2a5c7fa-bf27-40bd-84bc-c47fcf099841.png">
@@ -66,7 +66,7 @@ When analyzing temperature and total demand by time periods (night, morning, aft
 <img width="1780" alt="tot-dem-time-periods" src="https://user-images.githubusercontent.com/127566032/235383073-a7fd8adc-ea69-4af1-93f0-98facf9d210c.png">
 
 
-# Analysis and Results
+## Analysis and Results
 This study investigates the relationship between temperature and total energy demand in New South Wales using various machine learning models. The dataset comprises of 1,323,266 rows of data for both total demand (ranging from 4,286 MW to 14,649 MW) and air temperature (ranging from -1.3°C to 44.7°C). The data analysis begins by creating 7-day and 180-day moving averages of temperature and total demand. Seasonal temperature variations are consistent, while total energy demand shows a long-term downward trend with higher peaks and deeper troughs. Demand increases during temperature extremes due to heating and air-conditioning use.
 
 <img width="1000" alt="simple-linear-model" src="https://user-images.githubusercontent.com/127566032/235383158-2a90a804-f938-4668-a04b-ba1226c26b4f.png">
@@ -100,7 +100,7 @@ The final LSTM model, after extensive grid search and hyperparameter optimizatio
 
 This LSTM model's performance is comparable to the 82.5% prediction accuracy reported by Japanese researchers using LSTM networks for month-ahead electricity consumption forecasting. Overall, LSTMs hold significant potential for forecasting in various fields, demonstrating their capability for capturing long-term dependencies in time series data and outperforming traditional forecasting methods.
 
-# Discussion
+## Discussion
 This study aimed to determine the optimal models for forecasting energy demand based on temperature and seasonal features, considering both prior demand included and excluded scenarios. The analysis is divided into two segments, each focusing on different data partitions and features.
 
 Segment one encompasses the entire dataset, allocating 80% of the data for training and 20% for testing. The objective is to develop models using single or multiple engineered features, prioritizing high R-squared (R2) and low RMSE and MAPE values. Restricting the forecasting horizon to a 5-minute interval, the LSTM model achieves an R2 score of 0.93 when trained on 84% of the total data and tested from 20 June 2020 onwards.
@@ -113,7 +113,7 @@ Conversely, if the forecasting objective is focused on a longer-term horizon (sp
 
 Another essential factor in comparison involves evaluating the suitability of these models in the context of available training resources. LGB models can be trained within seconds, while deep learning, multi-layer LSTM models may require hours. Moreover, the volume of data necessary to train the LSTM model must be considerably more extensive. Fitting LSTM solely on the latter portion of the dataset does not yield good results, stressing the significance of ample training data for LSTM models in capturing long-range dependencies effectively.
 
-# Conclusion and Next Steps
+## Conclusion and Next Steps
 In conclusion, the analysis consists of two segments, each focusing on different aspects of the dataset and incorporating feature engineering. Segment one allocates 80% of the data for training and 20% for testing, yielding an R2 score of 0.93 for the LSTM model. Segment two divides the dataset in half, discarding the initial portion, and emphasizes the latter half with new features engineered to enhance performance.
 
 ![Table](https://user-images.githubusercontent.com/127566032/235382858-f03881bb-a018-4d5f-bbf3-ae3e595d42f4.jpg)
