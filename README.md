@@ -159,6 +159,7 @@ In conclusion, the analysis consists of two segments, each focusing on different
 <div align="center">
   <img width="500" alt="Table" src="https://user-images.githubusercontent.com/127566032/235382858-f03881bb-a018-4d5f-bbf3-ae3e595d42f4.jpg" />
 </div>
+<br>
 
 For companies interested in spot buying electricity, the deep learning LSTM model is recommended as it accounts for 93% of data variation. Governments and large institutions should use an ensemble of LGB models, which explains 85% of the variation over a broader horizon. When considering training resources, LGB models require seconds to execute, while LSTM models may take hours and need more extensive data.
 
