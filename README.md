@@ -1,7 +1,5 @@
-<p align="center">
-  <b style="font-size: 18px;">FORECASTING ELECTRICITY DEMAND</b>
-  <b style="font-size: 12px;">New South Wales, Sydney, Australia</b>
-</p>
+<h2 align="center">FORECASTING ELECTRICITY DEMAND</h2>
+<h4 align="center">New South Wales, Sydney, Australia</h4>
 
 
 ## Abstract
