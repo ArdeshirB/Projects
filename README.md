@@ -1,5 +1,6 @@
 <p align="center">
-  <b style="font-size: 18px;">FORECAST ELECTRICITY CONSUMPTION IN AUSTRALIA</b>
+  <b style="font-size: 18px;">FORECASTING ELECTRICITY DEMAND</b>
+  <b style="font-size: 12px;">New South Wales, Sydney, Australia</b>
 </p>
 
 
