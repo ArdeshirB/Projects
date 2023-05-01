@@ -127,7 +127,7 @@ The final LSTM model, after extensive grid search and hyperparameter optimizatio
 
 
 <div align="center">
-  <img alt="LSTM" src="https://user-images.githubusercontent.com/127566032/235394405-2f8be2e2-53b5-4a19-8ffd-311ba6708a28.JPG" />
+  <img width="900" alt="LSTM" src="https://user-images.githubusercontent.com/127566032/235394405-2f8be2e2-53b5-4a19-8ffd-311ba6708a28.JPG" />
 </div>
 
 
