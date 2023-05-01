@@ -1,5 +1,5 @@
 <p align="center">
-  <b style="font-size: 36px;">FORECAST ELECTRICITY CONSUMPTION IN AUSTRALIA</b>
+  <b style="font-size: 18px;">FORECAST ELECTRICITY CONSUMPTION IN AUSTRALIA</b>
 </p>
 
 
