@@ -119,7 +119,7 @@ Long Short-Term Memory (LSTM) is a recurrent neural network structure that effec
 <div align="center">
   <img src="https://user-images.githubusercontent.com/127566032/235382607-b87862fb-a774-4d94-b548-a0c51a9a1cf5.JPG" alt="LSTM Cell" />
 </div>
-
+<br>
 LSTM combined with ADAM (Adaptive Moment Estimation) optimizer has proven well-suited for electricity spot buyers and electricity price forecasting. Assuming high accuracy preference and 5-minute granularity data availability, a sequence-to-vector unidirectional LSTM model was developed. This model used a scaled two-dimensional Numpy array as input from the previous fifty timestamps and predicted a single subsequent timestamp on a rolling basis.<br><br>
 
 The deep learning model training phase ceased at the end of the training set, but recent data was continually supplied for testing purposes. This approach allowed the model to utilize the most current data for predictions based on the preceding fifty steps, promoting continuous adaptation. Despite computational complexities, extra resources were procured for training and evaluating LSTM models by subscribing to Colab Pro+.<br>
@@ -127,7 +127,7 @@ The deep learning model training phase ceased at the end of the training set, bu
 <div align="center">
   <img width="550" alt="TSCV" src="https://user-images.githubusercontent.com/127566032/235393959-e37c20bc-bba4-4898-a76a-9feb8b941670.png" />
 </div>
-
+<br>
 The preliminary LSTM model employed a slower learning rate, ADAM optimizer, L1 and L2 regularization, and set the epoch count at 20. The batch size was reduced to 2000, and Mean Absolute Error (MAE) was used as the loss function. A dropout rate of 0.1 across two layers was applied, promoting model robustness against noise.
 
 The final LSTM model, after extensive grid search and hyperparameter optimization, achieved an R2 score of 0.93, with a significant improvement observed when the learning rate was adjusted to 0.0002 and the batch size set to 3000. The number of hidden nodes was decreased to 5, accelerating model execution and enhancing convergence. The best model was saved based on the lowest RMSE score.<br><br>
@@ -136,7 +136,7 @@ The final LSTM model, after extensive grid search and hyperparameter optimizatio
 <div align="center">
   <img width="900" alt="LSTM" src="https://user-images.githubusercontent.com/127566032/235394405-2f8be2e2-53b5-4a19-8ffd-311ba6708a28.JPG" />
 </div>
-
+<br>
 
 This LSTM model's performance is comparable to the 82.5% prediction accuracy reported by Japanese researchers using LSTM networks for month-ahead electricity consumption forecasting. Overall, LSTMs hold significant potential for forecasting in various fields, demonstrating their capability for capturing long-term dependencies in time series data and outperforming traditional forecasting methods.<br>
 
