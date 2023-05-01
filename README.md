@@ -38,18 +38,20 @@ The main assumptions made were that future energy demand outcomes would be simil
 
 The performance of these models was evaluated using three key metrics: Coefficient of Determination (R²), Root Mean Square Error (RMSE), and Mean Absolute Percentage Error (MAPE). These metrics helped compare the accuracy of the models and determine which performed best in forecasting energy demand based on the given data.
 
+
+
 # Exploratory Data Analysis
 This study focuses on the analysis of total demand (MW) and temperature (°C) variables from merged and cleaned data sets, with a total of 1,323,266 rows. The total demand ranges from 4,286 MW to 14,649 MW, with a mean of 8,068 ± 1,308 MW. The temperature ranges from -1.3°C to 44.7°C, with a mean of 17.4 ± 5.85°C, which is reasonable for Bankstown, NSW.
 
-<img width="1808" alt="moving-avg-tot-dem" src="https://user-images.githubusercontent.com/127566032/235382499-c2a5c7fa-bf27-40bd-84bc-c47fcf099841.png">
+<img width="1000" alt="moving-avg-tot-dem" src="https://user-images.githubusercontent.com/127566032/235382499-c2a5c7fa-bf27-40bd-84bc-c47fcf099841.png">
 
 Seven-day and 180-day moving averages of temperature and total demand were created to analyze the data. The temperature chart demonstrates a consistent variation in temperature across recurring annual cycles over the 12-year period. The total demand chart reveals a long-term trend of reducing demand over the same period, although the variation has intensified recently, with higher peaks and deeper troughs.
 
-<img width="1820" alt="moving-avg-temp" src="https://user-images.githubusercontent.com/127566032/235382504-f38dbed2-8d2f-4ded-9d7a-5974fffafc5d.png">
+<img width="1000" alt="moving-avg-temp" src="https://user-images.githubusercontent.com/127566032/235382504-f38dbed2-8d2f-4ded-9d7a-5974fffafc5d.png">
 
 Total demand increases when the temperature is towards low or high extremes, consistent with the use of heating and air-conditioning during colder and warmer months. Histograms of temperature and total demand illustrate this relationship, with different colors for each season and mean and 95% confidence intervals depicted.
 
-<img width="2000" alt="hist-avg-temp" src="https://user-images.githubusercontent.com/127566032/235382535-a719b397-dd1b-47e3-b2fc-14f965d2b95c.png">
+<img width="1000" alt="hist-avg-temp" src="https://user-images.githubusercontent.com/127566032/235382535-a719b397-dd1b-47e3-b2fc-14f965d2b95c.png">
 
 Box plots of energy demand over days of the week and months of the year show expected trends. Less energy is used on weekends, likely due to reduced commercial consumption. Higher consumption is observed in summer and winter, with reduced consumption in spring and autumn. Outliers are more likely to be associated with increased energy consumption.
 
@@ -68,17 +70,17 @@ When analyzing temperature and total demand by time periods (night, morning, aft
 # Analysis and Results
 This study investigates the relationship between temperature and total energy demand in New South Wales using various machine learning models. The dataset comprises of 1,323,266 rows of data for both total demand (ranging from 4,286 MW to 14,649 MW) and air temperature (ranging from -1.3°C to 44.7°C). The data analysis begins by creating 7-day and 180-day moving averages of temperature and total demand. Seasonal temperature variations are consistent, while total energy demand shows a long-term downward trend with higher peaks and deeper troughs. Demand increases during temperature extremes due to heating and air-conditioning use.
 
-<img width="2000" alt="simple-linear-model" src="https://user-images.githubusercontent.com/127566032/235383158-2a90a804-f938-4668-a04b-ba1226c26b4f.png">
+<img width="1000" alt="simple-linear-model" src="https://user-images.githubusercontent.com/127566032/235383158-2a90a804-f938-4668-a04b-ba1226c26b4f.png">
 
 Several machine learning models were explored, starting with simple linear regression, which performed poorly (R2 = -0.21; RMSE = 1392.96; MAPE = 15.82%). Multiple linear regression improved accuracy slightly (R2 = 0.20; RMSE = 1132.82; MAPE = 11.28%). Gradient Boost ensemble method significantly improved the performance (R2 = 0.63; RMSE = 768.83; MAPE = 7.56%), as did the Random Forest algorithm (R2 = 0.74; RMSE = 646.18; MAPE = 6.25%). The Light Gradient Boost method further improved accuracy (R2 = 0.78; RMSE = 600.05; MAPE = 5.95%).
 
-<img width="2000" alt="huber-loss-regressor" src="https://user-images.githubusercontent.com/127566032/235383134-c0317890-de30-4335-97f7-bf2e3253dd4b.png">
+<img width="1000" alt="huber-loss-regressor" src="https://user-images.githubusercontent.com/127566032/235383134-c0317890-de30-4335-97f7-bf2e3253dd4b.png">
 
-<img width="2000" alt="random-forest" src="https://user-images.githubusercontent.com/127566032/235383007-e7612ab4-e59f-4cf9-9291-6c159e4a8358.png">
+<img width="1000" alt="random-forest" src="https://user-images.githubusercontent.com/127566032/235383007-e7612ab4-e59f-4cf9-9291-6c159e4a8358.png">
 
 After truncating the dataset and focusing on the latter half, the Light Gradient Boost model's performance improved (R2 = 0.85; RMSE = 519.63; MAPE = 5.07%), particularly in forecasting night-time energy consumption. The Huber Loss Regressor model, however, did not perform well (R2 = 0.45; RMSE = 985.84; MAPE = 10.14%). The Quantile Gradient Boosting model showed good forecasting capability (R2 = 0.83; RMSE = 540.08; MAPE = 5.26%) but did not outperform the Light Gradient Boost model. Lastly, the Grid Search Light Gradient Boost model maintained an R2 score of 0.83 (RMSE = 553.46; MAPE = 5.32%).
 
-<img width="2000" alt="grid-search-xgboost" src="https://user-images.githubusercontent.com/127566032/235382555-df731d51-07a7-4bd2-9c2d-9e91c7bb168b.png">
+<img width="1000" alt="grid-search-xgboost" src="https://user-images.githubusercontent.com/127566032/235382555-df731d51-07a7-4bd2-9c2d-9e91c7bb168b.png">
 
 In summary, the Light Gradient Boost model showed the best performance in predicting energy demand based on temperature and other time-based features. This model accounted for 85% of the variation in total energy demand, suggesting its potential for use in forecasting energy consumption, especially during night-time hours.
 
