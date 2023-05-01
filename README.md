@@ -7,6 +7,9 @@ and without using prior demand as a dependent variable. Several models were
 assessed in this project under multiple scenarios, including linear models, random
 forests, LightGBM and Long Short-Term Memory models. 
 
+![AEM](https://user-images.githubusercontent.com/127566032/235393785-026f4c75-da4e-4367-821b-620c17164be2.jpg)
+
+
 The findings indicated that for long-term forecasting, within the range of weeks to months, an ensemble
 of four Light Gradient Boost models delivered accurate and time-efficient results
 (R2=0.85, RMSE=519.63, MAPE=5.07%). 
