@@ -9,6 +9,7 @@ and seasonal features could be used to accurately predict energy demand, with
 and without using prior demand as a dependent variable. Several models were
 assessed in this project under multiple scenarios, including linear models, random
 forests, LightGBM and Long Short-Term Memory models. 
+
 <br>
 
 <div align="center">
