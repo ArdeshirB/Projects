@@ -2,6 +2,7 @@
 <h4 align="center">New South Wales, Sydney, Australia</h4>
 <br>
 Time Series Pre-Processing, Data Wrangling, Exploratory Analysis, Machine Learning Modelling, Deep Learning Modelling, Visualization and Prescriptive Analytics!<br>
+
 ## Abstract
 The aim of this project was to investigate whether temperature
 and seasonal features could be used to accurately predict energy demand, with
