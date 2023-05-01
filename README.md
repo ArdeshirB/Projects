@@ -54,16 +54,16 @@ Total demand increases when the temperature is towards low or high extremes, con
 
 Box plots of energy demand over days of the week and months of the year show expected trends. Less energy is used on weekends, likely due to reduced commercial consumption. Higher consumption is observed in summer and winter, with reduced consumption in spring and autumn. Outliers are more likely to be associated with increased energy consumption.
 
-<img width="2000" alt="hist-avg-tot-dem" src="https://user-images.githubusercontent.com/127566032/235382541-8b7f8db1-2412-4663-8746-1f84b16620a9.png">
+<img width="1000" alt="hist-avg-tot-dem" src="https://user-images.githubusercontent.com/127566032/235382541-8b7f8db1-2412-4663-8746-1f84b16620a9.png">
 
 When analyzing temperature and total demand by time periods (night, morning, afternoon, evening), the 180-day moving averages show that demand during the night period is significantly lower and less variable than the other time periods.
 
 
-<img width="1029" alt="box-tot-dem-months" src="https://user-images.githubusercontent.com/127566032/235383068-d596e5f6-68a1-4301-b06a-1224b7f29c7c.png">
+<img width="900" alt="box-tot-dem-months" src="https://user-images.githubusercontent.com/127566032/235383068-d596e5f6-68a1-4301-b06a-1224b7f29c7c.png">
 
-<img width="1040" alt="box-tot-dem-days" src="https://user-images.githubusercontent.com/127566032/235383069-499e3bff-42f0-4755-8f03-ec21fd6479b2.png">
+<img width="900" alt="box-tot-dem-days" src="https://user-images.githubusercontent.com/127566032/235383069-499e3bff-42f0-4755-8f03-ec21fd6479b2.png">
 
-<img width="1780" alt="tot-dem-time-periods" src="https://user-images.githubusercontent.com/127566032/235383073-a7fd8adc-ea69-4af1-93f0-98facf9d210c.png">
+<img width="900" alt="tot-dem-time-periods" src="https://user-images.githubusercontent.com/127566032/235383073-a7fd8adc-ea69-4af1-93f0-98facf9d210c.png">
 
 
 ## Analysis and Results
@@ -96,7 +96,8 @@ The deep learning model training phase ceased at the end of the training set, bu
 The preliminary LSTM model employed a slower learning rate, ADAM optimizer, L1 and L2 regularization, and set the epoch count at 20. The batch size was reduced to 2000, and Mean Absolute Error (MAE) was used as the loss function. A dropout rate of 0.1 across two layers was applied, promoting model robustness against noise.
 
 The final LSTM model, after extensive grid search and hyperparameter optimization, achieved an R2 score of 0.93, with a significant improvement observed when the learning rate was adjusted to 0.0002 and the batch size set to 3000. The number of hidden nodes was decreased to 5, accelerating model execution and enhancing convergence. The best model was saved based on the lowest RMSE score.
-<img width="1957" alt="LSTM4" src="https://user-images.githubusercontent.com/127566032/235382514-671752ee-7da9-4c42-b13b-20b85b08c8bf.png">
+
+<img width="1000" alt="LSTM4" src="https://user-images.githubusercontent.com/127566032/235382514-671752ee-7da9-4c42-b13b-20b85b08c8bf.png">
 
 This LSTM model's performance is comparable to the 82.5% prediction accuracy reported by Japanese researchers using LSTM networks for month-ahead electricity consumption forecasting. Overall, LSTMs hold significant potential for forecasting in various fields, demonstrating their capability for capturing long-term dependencies in time series data and outperforming traditional forecasting methods.
 
