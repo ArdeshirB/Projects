@@ -124,7 +124,7 @@ The deep learning model training phase ceased at the end of the training set, bu
 
 The preliminary LSTM model employed a slower learning rate, ADAM optimizer, L1 and L2 regularization, and set the epoch count at 20. The batch size was reduced to 2000, and Mean Absolute Error (MAE) was used as the loss function. A dropout rate of 0.1 across two layers was applied, promoting model robustness against noise.
 
-The final LSTM model, after extensive grid search and hyperparameter optimization, achieved an R2 score of 0.93, with a significant improvement observed when the learning rate was adjusted to 0.0002 and the batch size set to 3000. The number of hidden nodes was decreased to 5, accelerating model execution and enhancing convergence. The best model was saved based on the lowest RMSE score.
+The final LSTM model, after extensive grid search and hyperparameter optimization, achieved an R2 score of 0.93, with a significant improvement observed when the learning rate was adjusted to 0.0002 and the batch size set to 3000. The number of hidden nodes was decreased to 5, accelerating model execution and enhancing convergence. The best model was saved based on the lowest RMSE score.<br><br>
 
 
 <div align="center">
@@ -133,6 +133,7 @@ The final LSTM model, after extensive grid search and hyperparameter optimizatio
 
 
 This LSTM model's performance is comparable to the 82.5% prediction accuracy reported by Japanese researchers using LSTM networks for month-ahead electricity consumption forecasting. Overall, LSTMs hold significant potential for forecasting in various fields, demonstrating their capability for capturing long-term dependencies in time series data and outperforming traditional forecasting methods.<br>
+
 ## Discussion
 This study aimed to determine the optimal models for forecasting energy demand based on temperature and seasonal features, considering both prior demand included and excluded scenarios. The analysis is divided into two segments, each focusing on different data partitions and features.
 
@@ -144,10 +145,10 @@ If forecasting accuracy for future demand is a priority, the LSTM model is recom
 
 Conversely, if the forecasting objective is focused on a longer-term horizon (spanning months and years), an ensemble model derived from the latter half of the data comprising four stacked LGB models is advised. This model can explain around 85% of the data's variation.
 
-Another essential factor in comparison involves evaluating the suitability of these models in the context of available training resources. LGB models can be trained within seconds, while deep learning, multi-layer LSTM models may require hours. Moreover, the volume of data necessary to train the LSTM model must be considerably more extensive. Fitting LSTM solely on the latter portion of the dataset does not yield good results, stressing the significance of ample training data for LSTM models in capturing long-range dependencies effectively.
-<br>
+Another essential factor in comparison involves evaluating the suitability of these models in the context of available training resources. LGB models can be trained within seconds, while deep learning, multi-layer LSTM models may require hours. Moreover, the volume of data necessary to train the LSTM model must be considerably more extensive. Fitting LSTM solely on the latter portion of the dataset does not yield good results, stressing the significance of ample training data for LSTM models in capturing long-range dependencies effectively.<br>
+
 ## Conclusion and Next Steps
-In conclusion, the analysis consists of two segments, each focusing on different aspects of the dataset and incorporating feature engineering. Segment one allocates 80% of the data for training and 20% for testing, yielding an R2 score of 0.93 for the LSTM model. Segment two divides the dataset in half, discarding the initial portion, and emphasizes the latter half with new features engineered to enhance performance.
+In conclusion, the analysis consists of two segments, each focusing on different aspects of the dataset and incorporating feature engineering. Segment one allocates 80% of the data for training and 20% for testing, yielding an R2 score of 0.93 for the LSTM model. Segment two divides the dataset in half, discarding the initial portion, and emphasizes the latter half with new features engineered to enhance performance.<br>
 
 <div align="center">
   <img width="500" alt="Table" src="https://user-images.githubusercontent.com/127566032/235382858-f03881bb-a018-4d5f-bbf3-ae3e595d42f4.jpg" />
