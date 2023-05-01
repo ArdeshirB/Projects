@@ -37,8 +37,6 @@ The main assumptions made were that future energy demand outcomes would be simil
 
 The performance of these models was evaluated using three key metrics: Coefficient of Determination (R²), Root Mean Square Error (RMSE), and Mean Absolute Percentage Error (MAPE). These metrics helped compare the accuracy of the models and determine which performed best in forecasting energy demand based on the given data.
 
-
-
 ## Exploratory Data Analysis
 This study focuses on the analysis of total demand (MW) and temperature (°C) variables from merged and cleaned data sets, with a total of 1,323,266 rows. The total demand ranges from 4,286 MW to 14,649 MW, with a mean of 8,068 ± 1,308 MW. The temperature ranges from -1.3°C to 44.7°C, with a mean of 17.4 ± 5.85°C, which is reasonable for Bankstown, NSW.
 
@@ -72,8 +70,6 @@ This study investigates the relationship between temperature and total energy de
 <img width="1000" alt="simple-linear-model" src="https://user-images.githubusercontent.com/127566032/235383158-2a90a804-f938-4668-a04b-ba1226c26b4f.png">
 
 Several machine learning models were explored, starting with simple linear regression, which performed poorly (R2 = -0.21; RMSE = 1392.96; MAPE = 15.82%). Multiple linear regression improved accuracy slightly (R2 = 0.20; RMSE = 1132.82; MAPE = 11.28%). Gradient Boost ensemble method significantly improved the performance (R2 = 0.63; RMSE = 768.83; MAPE = 7.56%), as did the Random Forest algorithm (R2 = 0.74; RMSE = 646.18; MAPE = 6.25%). The Light Gradient Boost method further improved accuracy (R2 = 0.78; RMSE = 600.05; MAPE = 5.95%).
-
-
 
 <img width="1000" alt="random-forest" src="https://user-images.githubusercontent.com/127566032/235383007-e7612ab4-e59f-4cf9-9291-6c159e4a8358.png">
 
