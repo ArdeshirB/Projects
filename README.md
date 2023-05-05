@@ -1,7 +1,6 @@
 <h2 align="center">FORECASTING ELECTRICITY DEMAND</h1>
 <h4 align="center">New South Wales, Sydney, Australia</h4>
 <br>
-
 Time Series Pre-Processing, 
 Data Wrangling, 
 Exploratory Analysis, 
